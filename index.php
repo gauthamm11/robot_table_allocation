@@ -35,7 +35,7 @@ $.ajax({
   </script>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal">
+<div class="modal fade" id="myModal" data-backdrop="static">
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -66,16 +66,16 @@ $.ajax({
     <!-- Nav tabs -->
     <ul class="nav nav-tabs nav-justified">
       <li class="nav-item">
-        <a class="nav-link active" data-toggle="tab" href="#home"><strong>Home</strong></a>
+        <a class="nav-link" data-toggle="tab" href="#home"><strong>Home</strong></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#allocate"><strong>Allocation</strong></a>
+        <a class="nav-link active" data-toggle="tab" href="#allocate"><strong>Allocation</strong></a>
       </li>
     </ul>
 
     <!-- Tab panes -->
     <div class="tab-content">
-      <div class="tab-pane container active" id="home">
+      <div class="tab-pane container fade" id="home">
         <!-- home -->
         <br>
         <h3 class="bg-light p-2 text-center">Customer Entry</h3>
@@ -118,7 +118,7 @@ $.ajax({
         </form>
         <!-- ./home -->
       </div>
-      <div class="tab-pane container fade" id="allocate">
+      <div class="tab-pane container active" id="allocate">
         <!-- allocate -->
         <br>
         <h3 class="bg-light p-2 text-center">Table Layout</h3>
