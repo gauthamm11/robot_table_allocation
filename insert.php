@@ -14,7 +14,7 @@ if (!isset($_GET['name']) && !isset($_GET['mob']) && !isset($_GET['quant'])) {
     echo '
     <div class="alert alert-success" role="alert" id="calert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    Customer is Registered Successfully!
+    <i class="fas fa-bell"></i>&nbsp;Customer is Registered Successfully!
     </div>
     ';
 

@@ -11,7 +11,7 @@ if (!isset($_GET['sno']) && !isset($_GET['action'])) {
         echo '
         <div class="alert alert-warning" role="alert" id="snzalert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        Customer is snoozed for sometime!
+        <i class="fas fa-bell"></i>&nbsp;Customer is snoozed for sometime!
         </div>
         ';
     }elseif($action == 1){
@@ -23,7 +23,7 @@ if (!isset($_GET['sno']) && !isset($_GET['action'])) {
     echo '
     <div class="alert alert-success" role="alert" id="snzalert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    Customer is Alloted Successfully!
+    <i class="fas fa-bell"></i>&nbsp;Customer is Alloted Successfully!
     </div>
     ';
    

@@ -48,11 +48,11 @@ if (!isset($_GET['min']) && !isset($_GET['max'])) {
 		<div class="card">
 		<div class="card-body">
 		<div class="row">
-		<div class="col"><strong>'.$row['c_name'].'</strong><br>'.$row['c_mobile'].'</div>
-		<div class="col">
+		<div class="col"><i class="fas fa-user-alt text-info"></i>&nbsp;<strong>'.$row['c_name'].'</strong><br><i class="fas fa-phone-square text-success"></i>&nbsp;'.$row['c_mobile'].'</div>
+		<div class="col p-0">
 		<div class="clearfix">
-		<span class="float-left"><button type="button" class="btn btn-warning atn" data-value1="'.$row['sno'].'" data-value2="0">Snooze</button></span>
-		<span class="float-right"><button type="button" class="btn btn-success atn" data-value1="'.$row['sno'].'" data-value2="1">Accept</button></span>
+		<span class="float-left"><button type="button" class="btn btn-warning atn" data-value1="'.$row['sno'].'" data-value2="0">Snooze&nbsp;<i class="fas fa-user-clock"></i></button></span>
+		<span class="float-right"><button type="button" class="btn btn-success atn" data-value1="'.$row['sno'].'" data-value2="1">Allot&nbsp;<i class="fas fa-heart"></i></button></span>
 		</div>
 		</div>
 		</div>
