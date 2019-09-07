@@ -16,15 +16,53 @@
       $(".tab-alloc").click(function () {
         var min = $(this).attr('data-value1');
         var max = $(this).attr('data-value2');
-// alert(min+"\n"+max);
+        var tname = $(this).attr('data-value3');
+        $("#myModal").modal();
+// ajax open
+$.ajax({
+    type: "GET",
+    url: 'process.php',
+    data: { min: min, max: max },
+    success: function (data) {
+      $('#conthead').html(tname);
+      $("#viewbody").html(data);
+}
+});
+// ajax close
 });
       return false;
     });
   </script>
 
+<!-- Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" id="conthead">Table Name</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body" id="viewbody">
+        Loading...
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- ./Modal -->
+
+
 
   <div class="container-fluid">
-
     <!-- Nav tabs -->
     <ul class="nav nav-tabs nav-justified">
       <li class="nav-item">
@@ -89,25 +127,25 @@
         <div>
           <div class="row p-2">
             <div class="col-lg-3 col-md-3 col-sm-3 col-3">
-              <button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="1" data-value2="2">1</button>
+              <button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="1" data-value2="2" data-value3="Table 1">1</button>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-3">
-              <button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="3" data-value2="5">14</button>
+              <button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="3" data-value2="5" data-value3="Table 14">14</button>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-3">
-              <button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="6" data-value2="9">15</button>
+              <button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="6" data-value2="9" data-value3="Table 15">15</button>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-3"></div>
           </div>
           <div class="row p-2">
             <div class="col-lg-3 col-md-3 col-sm-3 col-3">
-              <button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="1" data-value2="2">2</button>
+              <button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="1" data-value2="2" data-value3="Table 2">2</button>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-3">
-              <button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="3" data-value2="5">13</button>
+              <button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="3" data-value2="5" data-value3="Table 13">13</button>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-3">
-              <button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="6" data-value2="9">16</button>
+              <button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="6" data-value2="9" data-value3="Table 16">16</button>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-3"></div>
           </div>
