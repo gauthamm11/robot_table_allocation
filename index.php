@@ -7,8 +7,8 @@
 	<link rel="stylesheet" href="bs_css.css">
 	<script src="jquery.js"></script>
 	<script src="popper.js"></script>
-  <script src="bs_js.js"></script>
-  <script src="fasm.js"></script>
+	<script src="bs_js.js"></script>
+	<script src="fasm.js"></script>
 </head>
 <body>
 
@@ -27,9 +27,9 @@
                 	url: 'insert.php',
                 	data: { name: name, mob: mob, quant: quant },
                 	success: function (data) {
-                    $('#name').val('');
-                    $('#mob').val('');
-                    $('#quant').val('');
+                		$('#name').val('');
+                		$('#mob').val('');
+                		$('#quant').val('');
                 		$("#msg").html(data);
                 		$("#calert").fadeTo(1000, 500).slideUp(500, function(){
                 			$("#calert").slideUp(500);
@@ -117,7 +117,7 @@
 					<div class="form-group">
 						<label for="quant">No. of Members:</label>
 						<select class="form-control" id="quant" required>
-              <option value="" disabled selected>Select a number</option>
+							<option value="" disabled selected>Select a number</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -134,7 +134,6 @@
 							<option value="14">14</option>
 							<option value="15">15</option>
 							<option value="16">16</option>
-							<option value="17">17</option>
 						</select>
 					</div>
 					<br>
@@ -155,94 +154,105 @@
 				<div>
 					<div class="row p-2">
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="1" data-value2="2" data-value3="Table 1"><i class='fas fa-chair'></i>&nbsp;1</button>
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="5" data-value2="6" data-value3="Table 1"><i class='fas fa-chair'></i>&nbsp;1</button>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="3" data-value2="5" data-value3="Table 14"><i class='fas fa-chair'></i>&nbsp;14</button>
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="3" data-value2="4" data-value3="Table 16"><i class='fas fa-chair'></i>&nbsp;16</button>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="6" data-value2="9" data-value3="Table 15"><i class='fas fa-chair'></i>&nbsp;15</button>
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="5" data-value2="6" data-value3="Table 17"><i class='fas fa-chair'></i>&nbsp;17</button>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3"></div>
 					</div>
 					<div class="row p-2">
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="1" data-value2="2" data-value3="Table 2"><i class='fas fa-chair'></i>&nbsp;2</button>
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="5" data-value2="6" data-value3="Table 2"><i class='fas fa-chair'></i>&nbsp;2</button>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="3" data-value2="5" data-value3="Table 13"><i class='fas fa-chair'></i>&nbsp;13</button>
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="3" data-value2="4" data-value3="Table 15"><i class='fas fa-chair'></i>&nbsp;15</button>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block btn-block tab-alloc" data-value1="6" data-value2="9" data-value3="Table 16"><i class='fas fa-chair'></i>&nbsp;16</button>
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="1" data-value2="2" data-value3="Table 18"><i class='fas fa-chair'></i>&nbsp;18</button>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3"></div>
 					</div>
 					<div class="row p-2">
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;3</button>
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="5" data-value2="6" data-value3="Table 3"><i class='fas fa-chair'></i>&nbsp;3</button>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;12</button>
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="3" data-value2="4" data-value3="Table 14"><i class='fas fa-chair'></i>&nbsp;14</button>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;17</button>
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="1" data-value2="2" data-value3="Table 19"><i class='fas fa-chair'></i>&nbsp;19</button>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3"></div>
 					</div>
 					<div class="row p-2">
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;4</button>
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="5" data-value2="6" data-value3="Table 4"><i class='fas fa-chair'></i>&nbsp;4</button>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;11</button>
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="3" data-value2="4" data-value3="Table 12"><i class='fas fa-chair'></i>&nbsp;12</button>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;18</button>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;24</button>
-						</div>
-					</div>
-					<div class="row p-2">
-						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;5</button>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;10</button>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;19</button>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;23</button>
-						</div>
-					</div>
-					<div class="row p-2">
-						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;6</button>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;9</button>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;20</button>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;22</button>
-						</div>
-					</div>
-					<div class="row p-2">
-						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;7</button>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;8</button>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
-							<button type="button" class="btn btn-info btn-block"><i class='fas fa-chair'></i>&nbsp;21</button>
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="1" data-value2="2" data-value3="Table 20"><i class='fas fa-chair'></i>&nbsp;20</button>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-3"></div>
 					</div>
+					<div class="row p-2">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="5" data-value2="6" data-value3="Table 5"><i class='fas fa-chair'></i>&nbsp;5</button>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="3" data-value2="4" data-value3="Table 11"><i class='fas fa-chair'></i>&nbsp;11</button>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="1" data-value2="2" data-value3="Table 21"><i class='fas fa-chair'></i>&nbsp;21</button>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="7" data-value2="12" data-value3="Table 27"><i class='fas fa-chair'></i>&nbsp;27</button>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="5" data-value2="6" data-value3="Table 6"><i class='fas fa-chair'></i>&nbsp;6</button>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="3" data-value2="4" data-value3="Table 10"><i class='fas fa-chair'></i>&nbsp;10</button>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="1" data-value2="2" data-value3="Table 22"><i class='fas fa-chair'></i>&nbsp;22</button>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="7" data-value2="12" data-value3="Table 26"><i class='fas fa-chair'></i>&nbsp;26</button>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="5" data-value2="6" data-value3="Table 7"><i class='fas fa-chair'></i>&nbsp;7</button>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="3" data-value2="4" data-value3="Table 9"><i class='fas fa-chair'></i>&nbsp;9</button>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="1" data-value2="2" data-value3="Table 23"><i class='fas fa-chair'></i>&nbsp;23</button>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="13" data-value2="16" data-value3="Table 25"><i class='fas fa-chair'></i>&nbsp;25</button>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3"></div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="5" data-value2="6" data-value3="Table 8"><i class='fas fa-chair'></i>&nbsp;8</button>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+							<button type="button" class="btn btn-info btn-block tab-alloc" data-value1="1" data-value2="2" data-value3="Table 24"><i class='fas fa-chair'></i>&nbsp;24</button>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-3"></div>
+					</div>
+					
 				</div>
 				<!-- ./table layout -->
 				<!-- ./allocate -->
